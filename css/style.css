@@ -1,0 +1,34 @@
+/* Sélection par type de balise */
+body {
+    background-color: ghostwhite;
+    border: 1px solid red;
+}
+
+/* Sélection par héritage 'Change la couleure de tous les boutons présent dans le code désigné*/
+#main-nav ul li button 
+{background-color:#6C757D;
+    color: white;
+    /* margin:10px 20px 10px 20px; */
+    margin:10px 20px 10px 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px;
+}
+#main-nav ul li {
+    list-style:none;
+    float:left;
+}
+    /* Retire l'élément flottant suiveur */
+#main-nav ul:after{
+    content:"";
+    clear: both;
+    display:block;
+}
+/* Pseudo class */
+button:hover{
+    cursor: pointer;
+    }
+button:before {
+    content: ">";
+    padding-right: 10px;
+}
